@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+a:hover,
+a:focus {
+  color: blueviolet;
+}
+
+.main-container {
+  margin: 10dvh auto;
+  width: 400px;
+
+  /* display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-self: center;
+  align-items: center; */
+}
+
+.toast-container,
+.card-container {
+  width: 400px;
+  margin: auto;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.toast-container {
+  font-size: 1.1rem;
+  line-height: 1.25rem;
+  position: absolute;
+  color: rgb(244, 241, 241);
+  background: linear-gradient(
+    90deg,
+    rgba(86, 169, 174, 0.736) 0%,
+    rgba(83, 209, 217, 1) 30%,
+    rgba(72, 159, 165, 1) 100%
+  );
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.toast-p {
+  margin-left: 1rem;
+}
+
+.close {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+}
+
+.close:hover {
+  color: black;
+}
+
+.card-container {
+  /* border: 1px solid green; */
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10dvh;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.card-one-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  height: auto;
+  font-size: 2rem;
+}
+
+.documents {
+  font-weight: bold;
+  margin-top: 0.75rem;
+}
+
+.add-new-button {
+  color: rgb(56, 193, 214);
+  font-size: 1.25rem;
+  /* border: 2px solid rgba(86, 169, 174, 0.736); */
+  padding: 0.75rem;
+  /* background-color: black; */
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  padding: 0.35rem 2rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.search-icon {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 0;
+  left: 0;
+  transform: translate(20%, 15%);
+}
+
+.item-container {
+  margin: 1rem 0;
+}
+
+.item-container .icon {
+  margin-right: 1rem;
+}
+
+.main-item-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-item-container .icon {
+  margin: 0;
+  padding: 0;
+  width: 4rem;
+}
+
+.main-item-container .file {
+  padding-left: 0.35rem;
+}
+
+.main-item-container .robot {
+  margin-left: -0.15rem;
+  margin-right: 0.15rem;
+}
+
+@media (max-height: 800px) {
+  .card-container {
+    margin-top: 15dvh;
+  }
+}
